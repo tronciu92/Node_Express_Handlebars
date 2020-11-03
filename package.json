@@ -1,7 +1,7 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "Node Express Handlebars Homework",
+  "description": "Node_Express_Handlebars",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/tronciu92/Node_Express_Handlebars"
   },
-  "author": "Ana Suvac",
+  "author": "Vasile Tronciu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tronciu92/Node_Express_Handlebars/issues"
