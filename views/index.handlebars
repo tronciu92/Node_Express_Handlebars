@@ -1,0 +1,48 @@
+<div class="container bg">
+	
+	<div class="row">
+	    <div class="center col-sm-12">
+			<img src="assets/img/burger.png" alt="Eat-Da-Burger App">
+	        <h1>Eat-Da-Burger App</h1>
+	        <p></p>
+	    </div>
+  	</div>
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+    <li>{{burger_name}}
+      	<button class="devoured" data-devoured="{{devoured}}" data-id="{{id}}">EAT ME!
+
+	</button>
+
+
+</li>
+ 
+
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>These burgers were so filling!</h2>
+
+<ul>
+  {{#each burgers}}
+  {{#if devoured}}
+    <li>
+       
+      	<button class="devoured" data-devoured="{{devoured}}" data-id="{{id}}">Wasn't That Yummy?
+	</button>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="nom">Burger Name:</label>
+    <input type="text" id="nom" name="name">
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
