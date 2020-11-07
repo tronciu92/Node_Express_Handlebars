@@ -1,11 +1,11 @@
-use burgers_db;
-insert into burgers (burger_name)
-values ("Beef Burger");
-insert into burgers (burger_name)
-values ("Cowboy Burger");
-insert into burgers (burger_name)
-values ("Cheese Burger");
-insert into burgers (burger_name)
-values ("Turkey Burger");
-insert into burgers (burger_name)
-values ("Portobello Mushroom");
+INSERT INTO burgers (burger_name)
+VALUES ('Beef Burger'), ('Cowboy Burger'), ('Cheese Burger'),('Turkey Burger');
+
+INSERT INTO burgers (burger_name, devoured)
+VALUES ('Portobello Mushroom', true);
+
+SELECT * FROM burgers;
+
+UPDATE burgers
+SET devoured = true
+WHERE id = 1;
